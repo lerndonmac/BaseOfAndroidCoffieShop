@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="false"
+    android:paddingTop="16dp"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:text="QUANTITY"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/qounterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/buttonPluss"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PriceTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:text="ORDER" />
+
+    <TextView
+        android:id="@+id/PriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:text="$0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonMinus"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:text="Price" />
+
+    <Button
+        android:id="@+id/buttonPluss"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="5dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/buttonMinus"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@id/qounterTextView"
+        android:text="-" />
+
+</RelativeLayout>
