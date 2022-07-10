@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -50,9 +51,13 @@ public class MainActivity extends AppCompatActivity {
         displayPrice(qounter);
     }
     private void dicremint(){
-        qounter -= 1;
-        qounterView.setText(String.valueOf(qounter));
-        displayPrice(qounter);
+        if ((qounter>=1)) {
+            qounter -= 1;
+            qounterView.setText(String.valueOf(qounter));
+            displayPrice(qounter);
+        }else {
+            Toast.makeText(this,"значение не может быть меньше 0", Toast.LENGTH_LONG).show();
+        }
     }
     @SuppressLint("SetTextI18n")
     private void displayPrice(int qounter){
