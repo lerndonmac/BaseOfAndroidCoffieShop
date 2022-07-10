@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
             qounterView.setText(String.valueOf(qounter));
             displayPrice(qounter);
         }else {
+
             Toast.makeText(this,"значение не может быть меньше 0", Toast.LENGTH_LONG).show();
         }
     }
